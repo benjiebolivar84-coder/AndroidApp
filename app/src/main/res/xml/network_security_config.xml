@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow cleartext to local IPs and localhost -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Use actual IP here -->
+        <domain includeSubdomains="TODO">10.136.198.56</domain>
+        <domain includeSubdomains="TODO">localhost</domain>
+    </domain-config>
+
+    <!-- fallback for any other local addresses -->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
